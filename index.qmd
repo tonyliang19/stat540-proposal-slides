@@ -1,0 +1,32 @@
+---
+title: "Team Lead Proposal"
+institute: "University of British Columbia"
+date: 2024-01-29
+engine: knitr
+format: 
+  revealjs:
+    slide-number: true
+    hash-one-based-index: true
+    embed-resources: true
+    scrollable: false
+    code-overflow: wrap
+    lang: en-CA
+    output-file: index.html
+    transition: fade
+editor: source
+---
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```

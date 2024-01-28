@@ -1,0 +1,52 @@
+// Own custom scss
+
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+
+.callout {
+  background-color: #FFFFFF;
+}
+
+.callout-caption {
+  color: $body-color;
+}
+
+.title-colors {
+  background: linear-gradient(to right, #F4EBE7 0%, #F4EBE7 50%, #FEF1F6 50%, #FEF1F6 100%),
+              linear-gradient(to right, #E5ECF2 0%, #E5ECF2 50%, #E7E0DC 50%, #E7E0DC 100%);
+  background-size: 100% 50%;
+  background-position: center top, center bottom;
+  background-repeat: no-repeat;
+}
+
+$link-color: #42affa;
+
+.winter {
+  color: #1A314E;
+
+  a {
+    color: #3A90C4;
+  }
+
+  a:hover {
+    color: #1E85C4;
+  }
+
+  h1, h2, h3 {
+    color: #26689E;
+  }
+
+  .slide-background-content {
+    background-color: #E5ECF2;
+  }
+
+  pre code {
+    background-color: #E5ECF2;
+  }
+}
+
+.reveal .slide blockquote {
+  border-left: 3px solid $text-muted;
+  padding-left: 0.5em;
+}

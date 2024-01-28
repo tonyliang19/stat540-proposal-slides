@@ -6,9 +6,12 @@ engine: knitr
 format: 
   revealjs:
     slide-number: true
+    # serif looks very similar to lead but ugly
+    # night is also good?
+    theme: [default, custom.scss]
     hash-one-based-index: true
     embed-resources: true
-    scrollable: false
+    scrollable: true
     code-overflow: wrap
     lang: en-CA
     output-file: index.html
@@ -16,17 +19,29 @@ format:
 editor: source
 ---
 
-## Bullets
+## Background {.winter}
 
-When you click the **Render** button a document will be generated that includes:
+- What is already known in context of this study
 
--   Content authored with markdown
--   Output from executable code
+## Question/Hypthesis {.winter}
 
-## Code
+- What is the knowledge gap you are trying to fill?
 
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+- What do you expect to find? {.winter}
 
-```{r}
-1 + 1
-```
+## Data Source {.winter}
+
+- Describe content and source of the data you will use?
+
+- If using previously published data, how will your project differ from previous literature?
+
+
+## Analysis Plan {.winter}
+
+- How will you answer your main research question?
+
+
+##
+
+
+Questions ?

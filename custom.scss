@@ -2,20 +2,9 @@
 
 /*-- scss:defaults --*/
 
+$presentation-font-size-root: 32px;
+
 /*-- scss:rules --*/
-/*
-#title-slide {
-    background-color: #E5ECF2;
-}
-
-#title-slide .title {
-  color: #26689E;
-}
-
-#title-slide .subtitle {
-  color: #00FFFF;
-}
-*/
 
 .title {
   text-align: center;
@@ -76,9 +65,9 @@ $link-color: #42affa;
     background-color: #E5ECF2;
   }
 
-  pre code {
-    background-color: #E5ECF2;
-  }
+  //pre code {
+    //background-color: #E5ECF2;
+  //}
 }
 
 .reveal .slide blockquote {

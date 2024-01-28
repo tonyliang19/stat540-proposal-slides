@@ -23,6 +23,15 @@ format:
 editor: source
 ---
 
+```{r}
+#| label: setup
+#| warning: false
+#| message: false
+
+library(dplyr)
+library(magrittr)
+```
+
 # {.winter}
 
 
@@ -78,6 +87,28 @@ Use this as a tip
 - Describe content and source of the data you will use?
 
 - If using previously published data, how will your project differ from previous literature?
+
+
+
+```{r}
+#| label: tbl-dataset
+sample_path <- here::here("data/sample_data.csv")
+col_names <- c("GSE ID", "Data Type", "Healthy/Cancer", "Number of patients", "Number of cells", "Sequencing platform", "Cell level annotation availablity")
+df <- read.csv(sample_path)
+
+df %>% knitr::kable(col.names = col_names)
+
+
+
+```
+
+::: {.notes}
+
+- Note 1 
+- Note 2
+- Note 3
+
+:::
 
 
 # Analysis Plan {.winter}

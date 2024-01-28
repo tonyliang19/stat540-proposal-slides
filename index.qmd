@@ -12,10 +12,13 @@ format:
     slide-number: true
     # serif looks very similar to lead but ugly
     # night is also good?
+    width: 1600
+    height: 900
     theme: [default, custom.scss]
+    css: custom.css
     hash-one-based-index: true
     embed-resources: true
-    scrollable: true
+    mouse-wheel: true
     code-overflow: wrap
     lang: en-CA
     output-file: index.html
@@ -69,11 +72,11 @@ Use this to highlight something?
 
 :::
 
-## Question/Hypthesis {.winter}
+## Question/Hypothesis {.winter}
 
 - What is the knowledge gap you are trying to fill?
-
 - What do you expect to find?
+
 
 ::: {.callout-tip}
 
@@ -82,7 +85,8 @@ Use this as a tip
 :::
 
 
-## Data Source {.winter}
+## Data Source {.winter .scrollable}
+
 
 - Describe content and source of the data you will use?
 
@@ -92,13 +96,13 @@ Use this as a tip
 
 ```{r}
 #| label: tbl-dataset
+#| echo: false
+#| tbl-cap: "Dataset to benchmark from GEO, and metadata"
 sample_path <- here::here("data/sample_data.csv")
 col_names <- c("GSE ID", "Data Type", "Healthy/Cancer", "Number of patients", "Number of cells", "Sequencing platform", "Cell level annotation availablity")
 df <- read.csv(sample_path)
-
-df %>% knitr::kable(col.names = col_names)
-
-
+df %>% knitr::kable(col.names = col_names,
+                    align='llccccr')
 
 ```
 
@@ -111,7 +115,7 @@ df %>% knitr::kable(col.names = col_names)
 :::
 
 
-# Analysis Plan {.winter}
+## Analysis Plan {.winter}
 
 - How will you answer your main research question?
 

@@ -1,0 +1,16 @@
+code.sourceCode {
+  font-size: 1em;
+}
+
+code {
+  font-size: 0.25em;
+}
+
+.small-code code.sourceCode {
+    font-size: 0.25em;
+}
+
+/*This controls output of code chunks*/
+.cell-output-display {
+  font-size: 0.8em;
+}

@@ -2,7 +2,16 @@
 
 /*-- scss:defaults --*/
 
-$presentation-font-size-root: 32px;
+//$presentation-font-size-root: 32px;
+
+$mainFontSize: 2em; // 1em is 16px
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Text selection
+$selectionBackgroundColor: #FF5E99;
+$selectionColor: #fff;
 
 /*-- scss:rules --*/
 

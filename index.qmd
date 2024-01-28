@@ -1,6 +1,10 @@
 ---
-title: "Team Lead Proposal"
-institute: "University of British Columbia"
+# title: "Team Lead Proposal"
+# author: 
+#   - name: Tony Liang
+#   - name: Jeffrey Tang
+#   - name: Aditi Srinivasan
+
 date: 2024-01-29
 engine: knitr
 format: 
@@ -19,15 +23,55 @@ format:
 editor: source
 ---
 
+# {.winter}
+
+
+::: {.title}
+
+Team Lead Proposal
+
+:::
+
+<br>
+
+
+::: {.center-text .smaller}
+
+Tony Liang, Jeffrey Tang, Aditi Srinivasan
+:::
+
+::: {.center-text}
+University of British Columbia
+:::
+
+::: {.center-text}
+2024-01-29
+:::
+
+
 ## Background {.winter}
 
 - What is already known in context of this study
+
+::: {.callout-note}
+# Test the note
+
+Use this to highlight something?
+
+:::
 
 ## Question/Hypthesis {.winter}
 
 - What is the knowledge gap you are trying to fill?
 
-- What do you expect to find? {.winter}
+- What do you expect to find?
+
+::: {.callout-tip}
+
+Use this as a tip
+
+:::
+
 
 ## Data Source {.winter}
 
@@ -36,12 +80,12 @@ editor: source
 - If using previously published data, how will your project differ from previous literature?
 
 
-## Analysis Plan {.winter}
+# Analysis Plan {.winter}
 
 - How will you answer your main research question?
 
 
-##
+## {.winter}
 
 
 Questions ?

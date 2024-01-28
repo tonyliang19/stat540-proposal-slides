@@ -3,6 +3,41 @@
 /*-- scss:defaults --*/
 
 /*-- scss:rules --*/
+/*
+#title-slide {
+    background-color: #E5ECF2;
+}
+
+#title-slide .title {
+  color: #26689E;
+}
+
+#title-slide .subtitle {
+  color: #00FFFF;
+}
+*/
+
+.title {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  color: #26689E;
+}
+
+.center-text {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.smaller {
+  font-size: 0.9em;
+}
+
 
 .callout {
   background-color: #FFFFFF;

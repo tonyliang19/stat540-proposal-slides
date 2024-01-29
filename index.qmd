@@ -7,6 +7,7 @@
 
 date: 2024-01-29
 engine: knitr
+bibliography: references.bib
 format: 
   revealjs:
     slide-number: true
@@ -18,7 +19,7 @@ format:
     css: custom.css
     hash-one-based-index: true
     embed-resources: true
-    mouse-wheel: true
+    mouse-wheel: false
     code-overflow: wrap
     lang: en-CA
     output-file: index.html
@@ -63,34 +64,54 @@ University of British Columbia
 
 ## Background {.winter}
 
-- What is already known in context of this study
+- Bulk transcriptomics
 
-::: {.callout-note}
-# Test the note
+- Cytokine-induced gene prediction
 
-Use this to highlight something?
+- Regulatory mechanisms
 
-:::
+
 
 ## Question/Hypothesis {.winter}
 
-- What is the knowledge gap you are trying to fill?
-- What do you expect to find?
 
+:::: {.columns}
 
-::: {.callout-tip}
+::: {.column width="55%"}
 
-Use this as a tip
+- Infer gene expression changes from cytokine stimulation using bulk RNA sequencing
+
+- ADD ON
+
+- ADD ON
+
+:::
+
+::: {.column width="45%"}
+
+```{r}
+#| label: fig-cytokine-network
+#| fig-cap: "Network Approaches for Dissecting the Immune System[^1]"
+#| fig-link: "https://www.sciencedirect.com/science/article/pii/S2589004220305411"
+#| fig-align: center
+#| echo: false
+knitr::include_graphics(here::here("materials/figs/bkg_cytokine_network.jpg"))
+```   
+
+:::
+
+::::
+
+::: {.aside}
+
+[^1]: @HAOSHI2020101354
 
 :::
 
 
 ## Data Source {.winter .scrollable}
 
-
-- Describe content and source of the data you will use?
-
-- If using previously published data, how will your project differ from previous literature?
+Retrieved from public database GEO^[Gene Expression Omnibus, public funtional genomics data repository at [here](https://www.ncbi.nlm.nih.gov/geo/)]
 
 
 
@@ -105,6 +126,10 @@ df %>% knitr::kable(col.names = col_names,
                     align='llccccr')
 
 ```
+
+<br>
+
+
 
 ::: {.notes}
 
@@ -122,5 +147,8 @@ df %>% knitr::kable(col.names = col_names,
 
 ## {.winter}
 
+Questions?
 
-Questions ?
+## References {.winter}
+
+

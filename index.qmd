@@ -77,7 +77,7 @@ University of British Columbia
 
 :::: {.columns}
 
-::: {.column width="55%"}
+::: {.column width="53%"}
 
 - Infer gene expression changes from cytokine stimulation using bulk RNA sequencing
 
@@ -87,11 +87,11 @@ University of British Columbia
 
 :::
 
-::: {.column width="45%"}
+::: {.column width="42%"}
 
 ```{r}
 #| label: fig-cytokine-network
-#| fig-cap: "Network Approaches for Dissecting the Immune System[^1]"
+#| fig-cap: "Network Approaches for Dissecting the Immune System^[@HAOSHI2020101354]"
 #| fig-link: "https://www.sciencedirect.com/science/article/pii/S2589004220305411"
 #| fig-align: center
 #| echo: false
@@ -102,11 +102,7 @@ knitr::include_graphics(here::here("materials/figs/bkg_cytokine_network.jpg"))
 
 ::::
 
-::: {.aside}
 
-[^1]: @HAOSHI2020101354
-
-:::
 
 
 ## Data Source {.winter .scrollable}
@@ -119,11 +115,12 @@ Retrieved from public database GEO^[Gene Expression Omnibus, public funtional ge
 #| label: tbl-dataset
 #| echo: false
 #| tbl-cap: "Dataset to benchmark from GEO, and metadata"
-sample_path <- here::here("data/sample_data.csv")
-col_names <- c("GSE ID", "Data Type", "Healthy/Cancer", "Number of patients", "Number of cells", "Sequencing platform", "Cell level annotation availablity")
-df <- read.csv(sample_path)
+data_path <- here::here("data/data_source.csv")
+col_names <- c("GSE ID", "Data Type", "Number of patients", 
+               "Sequencing platform", "Study")
+df <- read.csv(data_path)
 df %>% knitr::kable(col.names = col_names,
-                    align='llccccr')
+                    align='c')
 
 ```
 

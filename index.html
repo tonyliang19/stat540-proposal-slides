@@ -1192,13 +1192,13 @@ margin-right: 0; }
 <section id="questionhypothesis" class="slide level2 winter">
 <h2>Question/Hypothesis</h2>
 <div class="columns">
-<div class="column" style="width:55%;">
+<div class="column" style="width:53%;">
 <ul>
 <li><p>Infer gene expression changes from cytokine stimulation using bulk RNA sequencing</p></li>
 <li><p>ADD ON</p></li>
 <li><p>ADD ON</p></li>
 </ul>
-</div><div class="column" style="width:45%;">
+</div><div class="column" style="width:42%;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div id="fig-cytokine-network" class="quarto-figure quarto-figure-center" data-fig-align="center">
@@ -1215,10 +1215,7 @@ Figure 1: Network Approaches for Dissecting the Immune System<sup>1</sup>
 </div>
 </div>
 </div>
-
-<aside><div>
-
-</div><ol class="aside-footnotes"><li id="fn1"><p><span class="citation" data-cites="HAOSHI2020101354">Hao Shi et al. (<a href="#/references" role="doc-biblioref" onclick>2020</a>)</span></p></li></ol></aside></section>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><span class="citation" data-cites="HAOSHI2020101354">Hao Shi et al. (<a href="#/references" role="doc-biblioref" onclick>2020</a>)</span></p></li></ol></aside></section>
 <section id="data-source" class="slide level2 winter scrollable">
 <h2>Data Source</h2>
 <p>Retrieved from public database GEO<sup>1</sup></p>
@@ -1232,79 +1229,42 @@ Table 1: Dataset to benchmark from GEO, and metadata
 <div class="cell-output-display">
 <table class="cell">
 <colgroup>
-<col style="width: 7%">
-<col style="width: 7%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 10%">
 <col style="width: 12%">
-<col style="width: 15%">
-<col style="width: 12%">
-<col style="width: 18%">
-<col style="width: 25%">
+<col style="width: 64%">
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">GSE ID</th>
-<th style="text-align: left;">Data Type</th>
-<th style="text-align: center;">Healthy/Cancer</th>
+<th style="text-align: center;">GSE ID</th>
+<th style="text-align: center;">Data Type</th>
 <th style="text-align: center;">Number of patients</th>
-<th style="text-align: center;">Number of cells</th>
 <th style="text-align: center;">Sequencing platform</th>
-<th style="text-align: right;">Cell level annotation availablity</th>
+<th style="text-align: center;">Study</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">GSE123456</td>
-<td style="text-align: left;">scRNA-seq</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">10</td>
-<td style="text-align: center;">15494</td>
-<td style="text-align: center;">NextSeq 500 (Illumina)</td>
-<td style="text-align: right;">No</td>
+<td style="text-align: center;">GSE231345</td>
+<td style="text-align: center;">RNA-Seq</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">NextSeq 2000</td>
+<td style="text-align: center;">Predicting gene level sensitivity to JAK-STAT signaling perturbation using a mechanistic-to-machine learning framework</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">GSE123457</td>
-<td style="text-align: left;">scRNA-seq</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">15507</td>
-<td style="text-align: center;">NextSeq 500 (Illumina)</td>
-<td style="text-align: right;">No</td>
+<td style="text-align: center;">GSE241939</td>
+<td style="text-align: center;">RNA-Seq</td>
+<td style="text-align: center;">168</td>
+<td style="text-align: center;">NextSeq 2000</td>
+<td style="text-align: center;">Safe and effective immunostimulatory therapy through vector-controlled cytokine delivery</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">GSE123458</td>
-<td style="text-align: left;">scRNA-seq</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">15530</td>
-<td style="text-align: center;">NextSeq 500 (Illumina)</td>
-<td style="text-align: right;">Yes</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">GSE123459</td>
-<td style="text-align: left;">scRNA-seq</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">15548</td>
-<td style="text-align: center;">NextSeq 500 (Illumina)</td>
-<td style="text-align: right;">Yes</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">GSE123460</td>
-<td style="text-align: left;">scRNA-seq</td>
-<td style="text-align: center;">No</td>
-<td style="text-align: center;">7</td>
-<td style="text-align: center;">15487</td>
-<td style="text-align: center;">NextSeq 500 (Illumina)</td>
-<td style="text-align: right;">No</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">GSE123461</td>
-<td style="text-align: left;">scRNA-seq</td>
-<td style="text-align: center;">Yes</td>
-<td style="text-align: center;">5</td>
-<td style="text-align: center;">15611</td>
-<td style="text-align: center;">NextSeq 500 (Illumina)</td>
-<td style="text-align: right;">Yes</td>
+<td style="text-align: center;">GSE220433</td>
+<td style="text-align: center;">RNA-Seq</td>
+<td style="text-align: center;">20</td>
+<td style="text-align: center;">Illumina NovaSeq 6000</td>
+<td style="text-align: center;">Ibrutinib effects on in vitro exhausted CTL</td>
 </tr>
 </tbody>
 </table>

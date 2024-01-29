@@ -141,6 +141,13 @@ df %>% DT::datatable(colnames = col_names, options=list(dom="t"),
 
 - How will you answer your main research question?
 
+```{r}
+knitr::include_graphics("materials/figs/pipe2.png")
+```
+
+
+
+
 
 ## {.winter}
 

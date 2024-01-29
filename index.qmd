@@ -119,7 +119,8 @@ data_path <- here::here("data/data_source.csv")
 col_names <- c("GSE ID", "Data Type", "Number of patients", 
                "Sequencing platform", "Study")
 df <- read.csv(data_path)
-df %>% DT::datatable(colnames = col_names, options=list(dom="t"))
+df %>% DT::datatable(colnames = col_names, options=list(dom="t"), 
+                     rownames = FALSE)
 
 ```
 

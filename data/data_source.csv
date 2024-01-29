@@ -1,0 +1,4 @@
+"gse_study","type_seq","num_patients","instrument","title"
+"GSE231345","RNA-Seq",60,"NextSeq 2000","Predicting gene level sensitivity to JAK-STAT signaling perturbation using a mechanistic-to-machine learning framework"
+"GSE241939","RNA-Seq",168,"NextSeq 2000","Safe and effective immunostimulatory therapy through vector-controlled cytokine delivery"
+"GSE220433","RNA-Seq",20,"Illumina NovaSeq 6000","Ibrutinib effects on in vitro exhausted CTL"

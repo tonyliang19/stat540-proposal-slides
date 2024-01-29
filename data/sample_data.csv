@@ -1,7 +1,0 @@
-"gses","data_type","cancer","num_patients","num_cells","seq_plat","cell_level"
-"GSE123456","scRNA-seq","No",10,15494,"NextSeq 500 (Illumina)","No"
-"GSE123457","scRNA-seq","No",7,15507,"NextSeq 500 (Illumina)","No"
-"GSE123458","scRNA-seq","Yes",4,15530,"NextSeq 500 (Illumina)","Yes"
-"GSE123459","scRNA-seq","Yes",5,15548,"NextSeq 500 (Illumina)","Yes"
-"GSE123460","scRNA-seq","No",7,15487,"NextSeq 500 (Illumina)","No"
-"GSE123461","scRNA-seq","Yes",5,15611,"NextSeq 500 (Illumina)","Yes"

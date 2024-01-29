@@ -14,3 +14,14 @@ code {
 .cell-output-display {
   font-size: 0.8em;
 }
+
+/*Specific class for question at the end*/
+.question {
+  font-size: 3em;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #26689E;
+}

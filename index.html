@@ -3686,8 +3686,8 @@ Table 1: Metadata of dataset to benchmark from GEO
 </figcaption>
 <div aria-describedby="tbl-dataset-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-2b4fc70b6da9d9ee71e9" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-2b4fc70b6da9d9ee71e9">{"x":{"filter":"none","vertical":false,"data":[["GSE231345","GSE241939","GSE220433"],["RNA-Seq","RNA-Seq","RNA-Seq"],[60,168,20],["NextSeq 2000","NextSeq 2000","Illumina NovaSeq 6000"],["Predicting gene level sensitivity to JAK-STAT signaling perturbation using a mechanistic-to-machine learning framework","Safe and effective immunostimulatory therapy through vector-controlled cytokine delivery","Ibrutinib effects on in vitro exhausted CTL"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>GSE ID<\/th>\n      <th>Data Type<\/th>\n      <th>Number of patients<\/th>\n      <th>Sequencing platform<\/th>\n      <th>Study<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-724a13639df69b3763ee" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-724a13639df69b3763ee">{"x":{"filter":"none","vertical":false,"data":[["GSE231345","GSE241939","GSE220433"],["RNA-Seq","RNA-Seq","RNA-Seq"],[60,168,20],["NextSeq 2000","NextSeq 2000","Illumina NovaSeq 6000"],["Predicting gene level sensitivity to JAK-STAT signaling perturbation using a mechanistic-to-machine learning framework","Safe and effective immunostimulatory therapy through vector-controlled cytokine delivery","Ibrutinib effects on in vitro exhausted CTL"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>GSE ID<\/th>\n      <th>Data Type<\/th>\n      <th>Number of patients<\/th>\n      <th>Sequencing platform<\/th>\n      <th>Study<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","columnDefs":[{"className":"dt-right","targets":2}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </figure>
@@ -3695,10 +3695,21 @@ Table 1: Metadata of dataset to benchmark from GEO
 </div>
 <p><br></p>
 <aside class="notes">
+<p><strong>GSE231345</strong><br>
+- aims to predict single cytokine-induced IL-6 and IL-10 macrophages to link gene expression and predict their activity in the JAK/STAT pathway</p>
 <ul>
-<li>Note 1</li>
-<li>Note 2</li>
-<li>Note 3</li>
+<li>Mice (Female C57BL/6J)</li>
+<li>Could analyze 3-5 cytokine stimulation studies to infer expression and develop more comprehensive mechanistic to prediction workflow</li>
+</ul>
+<p><strong>GSE241939</strong></p>
+<ul>
+<li>Induces IL-12 on mouse BALBc cells to get maximal dosing information</li>
+<li>Their purpose was to use nanospheres as a method of drug delivery</li>
+<li>We repurpose their data to inform IL-12 stimulation on gene expression</li>
+</ul>
+<p><strong>GSE220433</strong></p>
+<ul>
+<li>Uses an immune checkpoint inhibitor ibrutinib (acts on BTK gene) to block BCR pathway on mice to observe IFNγ, TNFα and IL-2 production (used btk deficient mice to observe that effects of ibrutinib were not dependent on BTK signaling)</li>
 </ul>
 <style type="text/css">
 span.MJX_Assistive_MathML {

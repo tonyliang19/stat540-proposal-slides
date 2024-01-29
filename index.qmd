@@ -130,9 +130,23 @@ df %>% DT::datatable(colnames = col_names, options=list(dom="t"),
 
 ::: {.notes}
 
-- Note 1 
-- Note 2
-- Note 3
+**GSE231345**  
+- aims to predict single cytokine-induced IL-6 and IL-10 macrophages to link gene expression and predict their activity in the JAK/STAT pathway
+
+- Mice (Female C57BL/6J)
+- Could analyze 3-5 cytokine stimulation studies to infer expression and develop more comprehensive mechanistic to prediction workflow
+
+
+**GSE241939**
+
+- Induces IL-12 on mouse BALBc cells to get maximal dosing information
+- Their purpose was to use nanospheres as a method of drug delivery
+- We repurpose their data to inform IL-12 stimulation on gene expression
+
+**GSE220433**
+
+- Uses an immune checkpoint inhibitor ibrutinib (acts on BTK gene) to block BCR pathway on mice to observe IFNγ, TNFα and IL-2 production (used btk deficient mice to observe that effects of ibrutinib were not dependent on BTK signaling)
+
 
 :::
 

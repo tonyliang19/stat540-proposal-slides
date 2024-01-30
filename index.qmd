@@ -82,7 +82,7 @@ University of British Columbia
 
 - What patterns of gene expression can be predicted from cytokine stimulation using bulk RNA sequencing data?
 
-- Hypothesis: The expression of the interleukin genes (IL6, IL10, IL12, etc.) will be directly proportional to the level of immuno-stimulation.
+- Other than the interleukin genes (IL6, IL10, IL12, etc.), which other genes demonstrate a change in expression level when a cytokine response is triggered?
 
 :::
 
@@ -111,7 +111,7 @@ Retrieved from public database GEO^[Gene Expression Omnibus, public funtional ge
 
 
 ```{r}
-#| label: tbl-dataset
+#| label: data-tbl-dataset
 #| echo: false
 #| tbl-cap: "Metadata of dataset to benchmark from GEO"
 data_path <- here::here("data/data_source.csv")
@@ -119,7 +119,7 @@ col_names <- c("GSE ID", "Data Type", "Number of patients",
                "Sequencing platform", "Dataset Description")
 df <- read.csv(data_path)
 df %>% DT::datatable(colnames = col_names, options=list(dom="t"), 
-                     rownames = FALSE)
+                     rownames = FALSE, caption = "Table 1: Metadata of dataset to benchmark from GEO")
 
 ```
 

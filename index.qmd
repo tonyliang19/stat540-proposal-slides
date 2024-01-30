@@ -4,6 +4,7 @@
 #   - name: Tony Liang
 #   - name: Jeffrey Tang
 #   - name: Aditi Srinivasan
+#   - name: Sam Munn
 
 date: 2024-01-29
 engine: knitr
@@ -50,7 +51,7 @@ Team Lead Proposal
 
 ::: {.center-text .smaller}
 
-Tony Liang, Jeffrey Tang, Aditi Srinivasan
+Tony Liang, Jeffrey Tang, Aditi Srinivasan, Sam Munn
 :::
 
 ::: {.center-text}
@@ -115,7 +116,7 @@ Retrieved from public database GEO^[Gene Expression Omnibus, public funtional ge
 #| tbl-cap: "Metadata of dataset to benchmark from GEO"
 data_path <- here::here("data/data_source.csv")
 col_names <- c("GSE ID", "Data Type", "Number of patients", 
-               "Sequencing platform", "Study")
+               "Sequencing platform", "Dataset Description")
 df <- read.csv(data_path)
 df %>% DT::datatable(colnames = col_names, options=list(dom="t"), 
                      rownames = FALSE)

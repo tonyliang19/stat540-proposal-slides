@@ -83,3 +83,7 @@ $link-color: #42affa;
   border-left: 3px solid $text-muted;
   padding-left: 0.5em;
 }
+
+.reveal .slide figure>figcaption {
+  text-align: center;
+}

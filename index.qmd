@@ -79,11 +79,9 @@ University of British Columbia
 
 ::: {.column width="53%"}
 
-- Infer gene expression changes from cytokine stimulation using bulk RNA sequencing
+- What patterns of gene expression can be predicted from cytokine stimulation using bulk RNA sequencing data?
 
-- ADD ON
-
-- ADD ON
+- Hypothesis: The expression of the interleukin genes (IL6, IL10, IL12, etc.) will be directly proportional to the level of immuno-stimulation.
 
 :::
 

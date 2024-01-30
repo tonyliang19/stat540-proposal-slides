@@ -71,25 +71,27 @@ There are two types of cytokines (Type 1 or Type 2)^[@lucey1996type]:
 - Type 1 favours the development of strong cellular immune responses
 - Type 2 favour a strong humoral immune response
 
-Regulatory mechanisms in the context of cytokine induced signaling is well studied but there is limited ability to link back these cytokine induced activities on all gene expression activity partially due to short half-lives and pleiotropy^[jiang2021systematic]
+Regulatory mechanisms in the context of cytokine induced signaling is well studied but there is limited ability to link back these cytokine induced activities on all gene expression activity partially due to short half-lives and pleiotropy^[@jiang2021systematic]
 
 
-::: {.bottom-fig}
+```{r out.width="1000px"}
+#| label: "fig-cytokine"
+#| fig-align: center
+#| fig-cap-location: margin
+#| fig-cap: "Cytokine secretion occurs and response to inmmmune stimuli and act briefly locally at very low concentration ^[@Resch2005]"
 
-```{r fig.height=9, fig.width=12}
-knitr::include_graphics(here::here("materials/figs/cytokine_signalling_pathways.png"))
+knitr::include_graphics("materials/figs/cytokine_signalling_pathways.png")
 ```
 
-:::
 
 ## Question/Hypothesis {.winter}
 
 
 :::: {.columns}
 
-::: {.column width="53%"}
+::: {.column width="58%"}
 
-- What patterns of gene expression can be predicted from cytokine stimulation using bulk RNA sequencing data?
+- Can we leverage cytokine stimulated perturbation data to better understand gene expression using bulk RNA sequencing data comparing to control?
 
 - Other than the interleukin genes (*IL-6*, *IL-10*, *IL-12*, etc.), which other genes demonstrate a change in expression level when a cytokine response is triggered?
 
@@ -167,6 +169,7 @@ How will you answer your main research question?
 - We may propose some gene regulatory networks based on the relationships of genes and assess if the hub gene is the cytokine
 
 ```{r}
+#| fig-align: center
 knitr::include_graphics("materials/figs/pipe2.png")
 ```
 

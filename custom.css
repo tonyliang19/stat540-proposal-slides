@@ -35,3 +35,7 @@ code {
 .caption{
    text-align: center;
 }
+
+.larger2 {
+  font-size: 3.5em;
+}

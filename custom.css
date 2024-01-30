@@ -25,3 +25,9 @@ code {
   align-items: center;
   color: #26689E;
 }
+
+/* Specific class to place fig bottom */
+.bottom-fig {
+  position: absolute;
+  bottom: 0;
+}

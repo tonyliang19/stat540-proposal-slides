@@ -63,15 +63,24 @@ University of British Columbia
 :::
 
 
-## Background {.winter}
+## Background {.winter .smaller}
+Cytokines are small intercellular signalling protein that regulate immune responses by acting on various pathways
 
-- Bulk transcriptomics
+There are two types of cytokines (Type 1 or Type 2)^[@lucey1996type]:
 
-- [Cytokine-induced]{.fragment .highlight-red} gene prediction
+- Type 1 favours the development of strong cellular immune responses
+- Type 2 favour a strong humoral immune response
 
-- Regulatory mechanisms
+Regulatory mechanisms in the context of cytokine induced signaling is well studied but there is limited ability to link back these cytokine induced activities on all gene expression activity partially due to short half-lives and pleiotropy^[jiang2021systematic]
 
 
+::: {.bottom-fig}
+
+```{r fig.height=9, fig.width=12}
+knitr::include_graphics(here::here("materials/figs/cytokine_signalling_pathways.png"))
+```
+
+:::
 
 ## Question/Hypothesis {.winter}
 
@@ -82,7 +91,7 @@ University of British Columbia
 
 - What patterns of gene expression can be predicted from cytokine stimulation using bulk RNA sequencing data?
 
-- Other than the interleukin genes (IL6, IL10, IL12, etc.), which other genes demonstrate a change in expression level when a cytokine response is triggered?
+- Other than the interleukin genes (*IL-6*, *IL-10*, *IL-12*, etc.), which other genes demonstrate a change in expression level when a cytokine response is triggered?
 
 :::
 
@@ -120,7 +129,6 @@ col_names <- c("GSE ID", "Data Type", "Number of patients",
 df <- read.csv(data_path)
 df %>% DT::datatable(colnames = col_names, options=list(dom="t"), 
                      rownames = FALSE, caption = "Table 1: Metadata of dataset to benchmark from GEO")
-
 ```
 
 <br>
@@ -152,12 +160,15 @@ df %>% DT::datatable(colnames = col_names, options=list(dom="t"),
 
 ## Analysis Plan {.winter}
 
-- How will you answer your main research question?
+How will you answer your main research question?
+
+- We propose performing differential expression analysis on a series of cytokine stimulated mice samples
+- Next we will perform enrichment analysis to see what genes are influenced by the cytokine-specific stimulant comparing this with control
+- We may propose some gene regulatory networks based on the relationships of genes and assess if the hub gene is the cytokine
 
 ```{r}
 knitr::include_graphics("materials/figs/pipe2.png")
 ```
-
 
 
 
